@@ -1,0 +1,10 @@
+const world = new WorldManager(scene);
+world.initDemoZone();
+
+const buildMode = new BuildMode();
+
+window.addEventListener('keydown', e => {
+  if (e.key.toLowerCase() === 'b') {
+    buildMode.toggle();
+  }
+});
